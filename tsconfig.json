@@ -8,8 +8,9 @@
         "removeComments": true,
         "sourceMap": true,
         "explainFiles": true,
-        "target": "ESNext",
-        "moduleResolution": "NodeNext",
-        "module": "NodeNext"
-    }
+        "target": "ES2022",
+        "module": "CommonJS",
+        "outDir": "dist"
+    },
+    "include": ["src/**/*.ts"]
 }

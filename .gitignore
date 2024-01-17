@@ -2,6 +2,7 @@
 .git
 package-lock.json
 node_modules
+dist
 
 # sensitive files
 .env

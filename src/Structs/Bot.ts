@@ -5,8 +5,8 @@ import { join } from "path";
 import Command from "./Interfaces/Command"
 
 export default class Bot {
-    public commands: Array<ApplicationCommandDataResolvable>;
-    public commandsMap: Collection<string, Command>;
+    public commands: Array<ApplicationCommandDataResolvable> = new Array<ApplicationCommandDataResolvable>;
+    public commandsMap: Collection<string, Command> =  new Collection<string, Command>;
 
     public constructor(public readonly client: Client, private readonly botToken: string, private readonly appID: string) {
         this.registerSlashCommands();
