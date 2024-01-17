@@ -14,8 +14,8 @@
     "main": "dist/index.js",
     "scripts": {
         "build": "tsc --build",
-        "build-clean": "rm -r dist && tsc --build",
-        "clean": "rm -r dist",
+        "build-clean": "sudo rm -rf dist && tsc --build",
+        "clean": "sudo rm -rf dist",
         "run": "node dist/index.js"
     }
 }
