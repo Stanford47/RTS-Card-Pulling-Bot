@@ -5,12 +5,12 @@
         "node": "^21.5.0"
     },
     "dependencies": {
-        "typescript": "^5.3.3",
-        "discord.js": "^14.14.1",
         "@discordjs/builders": "^1.7.0",
-        "dotenv": "^16.3.1"
+        "discord.js": "^14.14.1",
+        "dotenv": "^16.3.1",
+        "fast-xml-parser": "^4.3.3",
+        "typescript": "^5.3.3"
     },
-    "devDependencies": {},
     "main": "dist/index.js",
     "scripts": {
         "build": "tsc --build",

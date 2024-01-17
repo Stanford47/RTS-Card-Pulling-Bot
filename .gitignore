@@ -4,5 +4,9 @@ package-lock.json
 node_modules
 dist
 
-# sensitive files
+# sensitive files/directories
 .env
+
+# unnecesary files/directories
+for_docs
+src/tests
