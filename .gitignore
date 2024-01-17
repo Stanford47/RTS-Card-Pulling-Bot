@@ -1,0 +1,7 @@
+# auto generated files/directories
+.git
+package-lock.json
+node_modules
+
+# sensitive files
+.env

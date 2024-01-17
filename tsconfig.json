@@ -1,0 +1,15 @@
+{
+    "buildOptions": {
+        "verbose": true,
+    },
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "explainFiles": true,
+        "target": "ESNext",
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext"
+    }
+}
