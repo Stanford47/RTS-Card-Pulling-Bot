@@ -1,5 +1,6 @@
 import Card from "../Structs/Interfaces/Card";
 import { parseToXML } from "../util/XML";
+
 import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
 
 export default {
@@ -8,13 +9,6 @@ export default {
     .setDescription("test the card rarities (yummy stats)"),
 
     exec(interaction: ChatInputCommandInteraction) {
-        const HOLOPROB = {
-            "starlight": 1/1152,
-            "secret": 1/12,
-            "ultra": 1/6,
-            "super": 1/1
-        }
-        
         let cards: Array<Card> = new Array<Card>;
         cards = [
             {ID: 1323, Name: "h"},
@@ -24,7 +18,7 @@ export default {
         ];
 
         let x = parseToXML(cards, 0);
-        console.log(x.deck.main.card);
+        //console.log(x.deck.main.card);
 
         interaction.reply({
             

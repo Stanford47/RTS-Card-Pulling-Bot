@@ -7,7 +7,6 @@
         "noImplicitAny": true,
         "removeComments": true,
         "sourceMap": true,
-        "explainFiles": true,
         "target": "ES2022",
         "module": "CommonJS",
         "outDir": "dist"

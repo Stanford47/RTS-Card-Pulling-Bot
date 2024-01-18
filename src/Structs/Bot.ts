@@ -2,7 +2,7 @@ import { ApplicationCommandDataResolvable, ChatInputCommandInteraction, Client, 
 import { config } from "dotenv";
 import { readdirSync } from "fs";
 import { join } from "path";
-import Command from "./Interfaces/Command"
+import Command from "./Interfaces/Command";
 
 export default class Bot {
     public commands: Array<ApplicationCommandDataResolvable> = new Array<ApplicationCommandDataResolvable>;
@@ -43,6 +43,7 @@ export default class Bot {
             if(!command) return;
 
             try {
+                //if()
                 command.exec(interaction as ChatInputCommandInteraction);
             } catch(err: any) {
                 console.error(err);

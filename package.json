@@ -11,11 +11,5 @@
         "fast-xml-parser": "^4.3.3",
         "typescript": "^5.3.3"
     },
-    "main": "dist/index.js",
-    "scripts": {
-        "build": "tsc --build",
-        "build-clean": "sudo rm -rf dist && tsc --build",
-        "clean": "sudo rm -rf dist",
-        "run": "node dist/index.js"
-    }
+    "main": "dist/index.js"
 }

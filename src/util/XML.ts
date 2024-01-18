@@ -1,26 +1,22 @@
 import Card from "../Structs/Interfaces/Card";
-import { XMLParser } from "fast-xml-parser";
 
-export function parseToXML(cardIDArray: Array<Card>, pullID: number) {
+export function parseToXML(cardIDArray: Array<Card>, pullID: number): string {
     let xmlDataString: string = `
     <?xml version="1.0" encoding="utf-8" ?>
     <deck name="Card Pull #${pullID}">
     <main>
     `;
 
-    for (let ygoCard in cardIDArray) {
-        xmlDataString = xmlDataString.concat(`
-            <card id="${cardIDArray[ygoCard].ID}" passcode="${cardIDArray[ygoCard].Passcode}">${cardIDArray[ygoCard].Name}</card>
-        `);
-    }
+    cardIDArray.forEach(card => {
+        xmlDataString += `<card id="${card.ID}" passcode="${card.Passcode === undefined ? "" : card.Passcode}">${card.Name}</card>\n`;
+    });
 
-    xmlDataString = xmlDataString.concat(`
+    xmlDataString += `
+    </main>
     <side></side>
     <extra></extra>
     </deck>
-    `);
+    `
 
-    const parser = new XMLParser();
-
-    return parser.parse(xmlDataString);
+    return xmlDataString;
 }

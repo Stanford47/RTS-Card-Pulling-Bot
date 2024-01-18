@@ -6,6 +6,7 @@ dist
 
 # sensitive files/directories
 .env
+config.json
 
 # unnecesary files/directories
 for_docs
