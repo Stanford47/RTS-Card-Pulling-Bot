@@ -21,7 +21,7 @@ export default class Bot {
     }
 
     private async registerSlashCommands() {
-        const rest = new REST({ version: "9" }).setToken(this.botToken);
+        const rest = new REST({ version: "10" }).setToken(this.botToken);
         const commandFiles = readdirSync(join(__dirname, "..", "commands")).filter(file => !file.endsWith(".map"));
 
         for(const file of commandFiles) {
