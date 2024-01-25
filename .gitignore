@@ -11,3 +11,4 @@ config.json
 # unnecesary files/directories
 for_docs
 src/tests
+TODO

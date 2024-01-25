@@ -1,5 +1,4 @@
 import { ApplicationCommandDataResolvable, ChatInputCommandInteraction, Client, Collection, Events, Interaction, REST, Routes } from "discord.js";
-import { config } from "dotenv";
 import { readdirSync } from "fs";
 import { join } from "path";
 import Command from "./Interfaces/Command";
