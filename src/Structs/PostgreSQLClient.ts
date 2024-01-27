@@ -24,7 +24,7 @@ export default class SQLClient {
 
     public async deleteTable() {};
 
-    public async addData() {
-        
-    }
+    public async addData() {};
+
+    public async getTables() {};
 }
